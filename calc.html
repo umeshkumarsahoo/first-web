@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator css</title>
+    <style>
+        .Maindiv{
+            border: 6px solid rgb(9, 9, 9);
+            width:450px;
+            height:500px;  
+            margin:100px 100px;
+            background-image: url(https://tse4.mm.bing.net/th?id=OIP.ZVBaK2FeuHqeb1ZpaWzt0wHaEK&pid=Api&P=0&h=220);          
+        }
+        .div1{
+            display: flex;
+            border: 4px solid rgb(15, 14, 14);
+            width: 80%;
+            height:80px;
+            border-radius:15%;
+            margin-top: 40px;
+            margin-left: 40px;
+            flex-direction: row-reverse;
+            font-size:75px;
+            font-weight: bolder;
+            align-items: center;
+            background-color: rgba(42, 101, 81, 0.737);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .div2{
+            display: grid;
+            border: 0px solid rgb(242, 242, 242);
+            width: 80%;
+            margin-top: 30px;
+            margin-left: 40px;
+            height: fit-content;
+            grid-template-rows:repeat(4,1fr) ;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .no{
+            margin: 20% 20%;
+            height: 40px;
+            border: 3px solid black;
+            font-size: larger;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+        .operator{
+            background-color: rgb(164, 170, 185);
+            color: rgb(0, 0, 0);
+            margin: 20% 20%;
+            height: 40px;
+            border: 3px solid rgb(1, 1, 1);
+            font-size:x-large;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .clear{
+            background-color: darkorange;
+            color: rgb(252, 252, 252);
+            margin: 20% 20%;
+            height: 40px;
+            border: 3px solid black; 
+            font-size:x-large;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      
+        }
+
+    </style>
+</head>
+<body background="https://wallpaperaccess.com/full/1205128.png">
+    <div class="Maindiv">
+        <div class="div1">0</div>
+        <div class="div2">
+            
+            <button class="no">7</button>
+            <button class="no">8</button>
+            <button class="no">9</button>
+            <button class="operator">*</button>
+
+            <button  class="no">4</button>
+            <button class="no">5</button>
+            <button class="no">6</button>
+            <button  class="operator">-</button>
+
+            <button class="no">1</button>
+            <button class="no">2</button>
+            <button class="no">3</button>
+            <button class="operator">+</button>
+
+            <button class="clear">AC</button>
+            <button class="no">0</button>
+            <button class="operator">=</button>
+            <button class="operator">/</button>
+        
+        </div>
+    </div>
+</body>
+</html>
